@@ -62,14 +62,6 @@ header a {
     text-decoration: none;
 }
 
-a:link {
-    color: blue;
-}
-
-a:visited {
-    color: grey;
-}
-
 section {
     position: relative;
     top: 84px;
