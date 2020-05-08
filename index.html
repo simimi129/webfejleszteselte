@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Siklóernyő</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+
+
+<body>
+    <header>
+        <h1>Siklóernyőzés</h1>
+        <h2>avagy repülni emberként</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="kialakulasa.html">Kialakulása</a></li>
+                <li><a href="fajtai.html">Fajtái</a></li>
+                <li><a href="tudni.html">Tudnivalók</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="1.jpg" alt="paragliding">
+    <section>
+        <h3>Siklóernyőzésről általánosan</h3>
+        <article>
+            <h4>Sikló</h4>
+            <p>A siklóernyő merev tartást biztosító elemektől megfosztott hordozó felületű, hajtómű nélküli repülő szerkezet.</p><br><br>
+            <h4>Extrém?</h4>
+            <p>A siklóernyőzés hivatalosan nem tartozik az extrém sportok közé, mégis sokan akként tekintenek rá. "Extrém" voltát nem veszélyessége, sokkal inkább a repülés hétköznapitól eltérő közege adja. A siklóernyő viszonylag lassú repülő szerkezet,
+                de csodálatos szabad repülési élményt biztosít, mivel nem kabinban ülve repülünk. Mivel ez kiszolgáltatottá teszi a pilótát, a siklóernyősnek tisztában kell lennie az időjárás jelzéseivel, veszélyeivel.</p><br><br>
+            <h4>Hogyan?</h4>
+            <p>A siklóernyő tulajdonképpen egy speciális, mesterséges kevlárszálasanyagú fonalakból szőtt szárny. Felső felületén a levegő áramlása gyorsabb, mint alul, így alul nyomó-, felül pedig szívóhatás (felhajtóerő) keletkezik.<br><br> A siklóernyős
+                kupolát cellákkal osztják több részbe, melyek között szabad a levegő áramlása, azonban kifelé lassabban távozik a levegő. Az ernyőn egyes gyártók pl. kiömlő lukakat is kialakítanak, de mindezek és az ehhez hasonló apróbb változtatások
+                nagy különbségeket nem eredményeznek az egyes típusok között.<br><br> A siklóernyőt a szárnyprofil alakjának módosításával lehet irányítani a zsinórzat segítségével. Ezt nevezik trim rendszernek. A trim sebesség az ernyő alapsebessége
+                a levegőhöz képest olyankor, amikor egyetlen zsinórt sem húzunk meg. Az ernyők sebessége a gyorsító használatával növelhető. Ugyanígy fékek használatával lassíthatunk az ernyőn, ami leszálláskor hasznos. Az ernyő a fékek használatával
+                irányítható balra vagy jobbra.</p>
+        </article>
+    </section>
+    <script>
+        function changeCSS(cssFile, cssLinkIndex) {
+
+            var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+            var newlink = document.createElement("link");
+            newlink.setAttribute("rel", "stylesheet");
+            newlink.setAttribute("type", "text/css");
+            newlink.setAttribute("href", cssFile);
+
+            document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+        }
+    </script>
+    <footer>
+        <span>Készítette: Szabó Simon</span>
+        <a href="#" onclick="changeCSS('style.css', 0);">stílus 1</a>
+        <a href="#" onclick="changeCSS('stylediff.css', 0);">stílus 2</a>
+    </footer>
+</body>
+
+</html>
